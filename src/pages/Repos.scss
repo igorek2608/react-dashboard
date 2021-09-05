@@ -1,0 +1,89 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+}
+
+.repos {
+  padding: 20px 0;
+
+  &-item {
+    border: 1px solid tomato;
+    border-radius: 2px;
+    .link-name {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: rgba(80, 80, 231, 0.466);
+      transition: color 200ms linear;
+      font-size: 25px;
+    }
+    .link-name:hover {
+      color: blueviolet;
+    }
+  }
+}
+
+.search-wrapper {
+  padding: 20px 0;
+  .search {
+    outline: none;
+    width: 250px;
+    border: none;
+    padding: 8px 16px;
+    background-color: rgba(24, 27, 207, 0.315);
+    border-radius: 3px;
+    transition:background-color 300ms ease-in ;
+  }
+  .search:hover {
+    border: 1px solid orangered;
+    background-color: rgba(202, 32, 188, 0.205);
+  }
+  .search::placeholder {
+    color: rgb(0, 17, 255);
+  }
+}
+
+
+
+.repos-description {
+  padding: 12px 0;
+  
+    li{
+        list-style: none;
+        padding: 2px 0;
+        color:rgba(0, 0, 0, 0.733);
+    }
+    
+}
+
+.pages {
+  margin: 20px 0;
+  .page,.current-page {
+    margin: 0px 4px;
+    cursor: pointer;
+    border: 1px solid red;
+    border-radius: 100%;
+    padding: 5px 10px;
+  }
+  .current-page{
+      border:2px solid blue;
+      font-weight: 600;
+      
+  }
+}
